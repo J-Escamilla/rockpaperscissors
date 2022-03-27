@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+    <div class="game-container">
+        <div class="header-container">
+                <h1>Rock, Paper, Scissors</h1>
+                <h3>Pick a hand, any hand</h3>
+            </div>
+
+            <div class="score-container">
+                <h2>Score</h2>
+                <div class="score">
+                    <h3>You: <span id="user-score">0</span></h3>
+                    <h3>Opponent: <span id="opp-score">0</span></h3>
+                </div>
+            </div>
+            
+            <div class="hand-container">
+                <div class="userHands">
+                    <img class="" id="rock" src="rock.png">
+                    <img class="hidden" id="paper" src="paper.png">
+                    <img class="hidden" id="scissors"src="scissors.png">
+                </div>
+                <div class="opponentHands">
+                    <img class="" id="oppRock" src="rock.png">
+                    <img class="hidden" id="paperOpp"src="paper.png">
+                    <img class="hidden" id="scissorsOpp"src="scissors.png"> 
+                </div>
+            </div>
+                <div class="button-container">
+                    <button class="rockBtn">Rock</button>
+                    <button id="pprBtn"class="paperBtn">Paper</button>
+                    <button class="scissorsBtn">Scissors</button>
+                    <div class="otherButtons">
+                        <button class="reset">Reset</button>
+                        <button class="nextRound">Next Round</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="magic.js"></script>
+</body>
+</html>

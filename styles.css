@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background: #d9a7c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.game-container {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    margin: 0 80px;
+}
+
+.score-container {
+    margin-top: 35px;
+}
+
+.hand-container {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.userHands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#rock, #paperOpp, #scissorsOpp {
+    transform: scaleX(-1);
+}
+
+.hidden {
+    display: none;
+}
+
+.button-container {
+    margin-top: 30px;
+}
+
+.rockBtn, .paperBtn, .scissorsBtn {
+    padding: 1rem;
+    margin: 0 25px;
+    border-radius: 10px;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    background-color: #EF6461;
+    cursor: pointer;
+}
+
+.reset, .nextRound {
+    padding: 1rem;
+    margin: 20px 25px;
+    border-radius: 10px;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    background-color: #EF6461;
+    cursor: pointer;
+}
+
+.nextRound{
+    background-color: rgb(98, 40, 206);
+}
+
+.rockBtn:hover, .paperBtn:hover, .scissorsBtn:hover, .reset:hover, .nextRound:hover {
+    background-color: #aa3937;
+}
+
